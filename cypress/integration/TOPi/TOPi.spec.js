@@ -69,7 +69,6 @@ describe("TOPi Recipe UI", () => {
     cy.get("[data-id=I]").click();
     cy.wait(3000);
     cy.get("[class=recipe-btn]").click();
-    cy.wait(3000);
     cy.contains("Irish stew").should("to.have.length", 1);
     cy.wait(3000);
     cy.get("[id=recipe-close-btn]").click();
